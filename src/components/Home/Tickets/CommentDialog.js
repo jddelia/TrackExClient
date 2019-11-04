@@ -24,7 +24,7 @@ function CommentDialog({ ticket, dialogView, setDidSubmit, handleDialogView }) {
     params.append('content', content);
 
     axios.put(
-      `http://localhost:5000/tickets/update/${ticket._id}`,
+      `https://trackexserver.herokuapp.com/tickets/update/${ticket._id}`,
       params,
     ).then(res => {
       setDidSubmit(true);
