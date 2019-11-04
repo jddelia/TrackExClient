@@ -27,7 +27,7 @@ function CreateTicketForm() {
     params.append('priority', priority);
     params.append('content', content);
 
-    axios.post('http://localhost:5000/tickets/create', params)
+    axios.post('https://trackexserver.herokuapp.com/tickets/create', params)
       .then(res => {
         console.log(res.data);
         setIsDisabled(false);

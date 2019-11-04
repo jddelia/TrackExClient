@@ -14,7 +14,7 @@ const TicketPageContainer = ({ history, match }) => {
 
   useEffect(() => {
     function fetchData() {
-      axios.get(`http://localhost:5000/tickets/ticket/${match.params.id}`)
+      axios.get(`https://trackexserver.herokuapp.com/tickets/ticket/${match.params.id}`)
         .then(response => {
           setTicket(response.data[0]);
           setDidSubmit(false);

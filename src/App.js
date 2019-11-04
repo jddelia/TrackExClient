@@ -12,7 +12,7 @@ import TicketsContext from './contexts/TicketsContext';
 import TicketPageContainer from './components/Home/Tickets/TicketPageContainer';
 import CreateTicketForm from './components/Home/Tickets/CreateTicket/CreateTicketForm';
 
-const API_URL = 'http://localhost:5000/tickets/all'
+const API_URL = 'https://trackexserver.herokuapp.com/tickets/all'
 
 function App() {
   const [tickets, setTickets] = useState([]);
